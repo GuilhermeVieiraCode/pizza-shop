@@ -27,7 +27,6 @@ public class Main {
 
         Pizza pizza = new PizzaShopPizza("pepperoni", 55.0f);
 
-        // TODO - implementar padrão decorator para só precisar passar o objeto pizza
         Pizza pizzaWithDiscountCoupon = new DiscountCouponDecorator(pizza);
         Pizza pizzaWithExtraCheese = new ExtraCheeseDecorator(pizzaWithDiscountCoupon);
         Pizza pizzaWithStuffedCrust = new StuffedCrustDecorator(pizzaWithExtraCheese);
